@@ -22,7 +22,7 @@ import okhttp3.Response;
 
 public class SecondActivity extends AppCompatActivity {
     private static final String TAG = "SecondActivity";
-    public static final String BASE_URL = "https://staging.boschnext.com/dev/RB.Bnext.Configuration/v1.0/api/configuration/ios/version?currentVersion=2.4.0";
+    public static final String BASE_URL = "use your url here";
     public static final int TIME_INTERVAL = 10000;
     TextView textView,textView1,textView2;
      RestClient restClient;
@@ -104,11 +104,11 @@ public class SecondActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     try{
-                                        JSONObject js = new JSONObject(ss);
-                                        boolean forceUpdate = js.getBoolean("forceUpdate");
-                                        String versionName = js.getString("latestVersion");
-                                        textView1.setText(""+forceUpdate);
-                                        textView2.setText(versionName);
+//                                        JSONObject js = new JSONObject(ss);
+//                                        boolean forceUpdate = js.getBoolean("forceUpdate");
+//                                        String versionName = js.getString("latestVersion");
+//                                        textView1.setText(""+forceUpdate);
+//                                        textView2.setText(versionName);
                                         textView.setText("");
                                     }
                                     catch (Exception e){
